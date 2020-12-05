@@ -11,4 +11,5 @@ I am building 50 mini javascript projects as part of a course.
 # 2) Progress Bar
 
     Link: https://github.com/tahakhan0/50-mini-Javascript-projects/tree/main/2_ProgressBar
-    ![Alt text](/50JSProjects/2.gif?raw=true "Progress Bar")
+ 
+![Alt text](/50JSProjects/2.gif?raw=true "Progress Bar")
