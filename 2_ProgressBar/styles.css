@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap");
+
+:root {
+  --line-border-empty: #e0e0e0;
+  --line-border-full: #3f0eb6;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Mulish", sans-serif;
+}
+.panel-container {
+  display: flex;
+  width: 90vw;
+  align-items: center;
+  justify-content: center;
+}
+.panel {
+  height: 40vh;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  border-radius: 20px;
+  margin: 10px;
+  flex: 1;
+  transition: flex 0.9s ease-in;
+  margin-bottom: 80px;
+}
+.panel h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  color: #fff;
+  font-size: 16px;
+  opacity: 0;
+}
+.panel.activePanel {
+  flex: 4;
+  height: 60vh;
+  transition: flex 0.9s ease-in;
+}
+.panel.activePanel h3 {
+  font-size: 22px;
+  opacity: 1;
+  transition: opacity 0.4s ease-in 0.9s;
+}
+
+.container {
+  text-align: center;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 350px;
+  position: relative;
+}
+
+.progress-container::before {
+  content: "";
+  position: absolute;
+  background-color: var(--line-border-empty);
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  z-index: -1;
+  transform: translateY(-50%);
+  transition: 0.4s ease;
+}
+.progress {
+  position: absolute;
+  background-color: var(--line-border-full);
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transform: translateY(-50%);
+  transition: 0.4s ease;
+}
+.circle {
+  background-color: #fff;
+  padding: 0 5px;
+  border: 2px solid var(--line-border-empty);
+  border-radius: 50%;
+  font-size: 16px;
+}
+.circle.active {
+  background-color: var(--line-border-full);
+  color: #fff;
+  padding: 0 5px;
+  border: 2px solid var(--line-border-full);
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.btn {
+  font-size: 18px;
+  font-family: inherit;
+  background-color: var(--line-border-full);
+  color: #fff;
+  padding: 8px 30px;
+  border: 0;
+  border-radius: 30px;
+  margin: 0 10px;
+}
+.btn:active {
+  /* transform give a clicking effect when clicked */
+  transform: scale(0.98);
+}
+.btn:focus {
+  /* removes the outline on the button */
+  outline: 0;
+}
+.btn:disabled {
+  background-color: var(--line-border-empty);
+  color: #5a595d;
+  cursor: not-allowed;
+}

@@ -41,7 +41,7 @@ body {
 }
 .panel.active h3 {
   opacity: 1;
-  transition: opacity 0.4s ease in 1s;
+  transition: opacity 0.4s ease-in 1s;
 }
 /* 
 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" /> -->
+    <title>Progress Bar</title>
+  </head>
+  <body>
+    <div class="panel-container">
+      <div
+        class="panel activePanel"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1487309078313-fad80c3ec1e5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80');
+        "
+      >
+        <h3>Awesome content</h3>
+      </div>
+      <div
+        class="panel"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1484497212149-1d8800bcaa18?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80');
+        "
+      >
+        <h3>Good content</h3>
+      </div>
+
+      <div
+        class="panel"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1606542353593-d1f26eb13088?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80');
+        "
+      >
+        <h3>Like your content</h3>
+      </div>
+      <div
+        class="panel"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1583214225227-f1adc91f0d22?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=802&q=80');
+        "
+      >
+        <h3>Great content</h3>
+      </div>
+    </div>
+    <div class="container">
+      <div class="progress-container">
+        <div class="progress"></div>
+        <div class="circle active">1</div>
+        <div class="circle">2</div>
+        <div class="circle">3</div>
+        <div class="circle">4</div>
+      </div>
+      <button class="btn" id="prev" disabled>Previous</button>
+      <button class="btn" id="next">Next</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
